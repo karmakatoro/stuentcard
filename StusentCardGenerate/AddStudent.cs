@@ -56,9 +56,16 @@ namespace StudentCardGenerate
             string promotion = textPromotion.Text.Trim();
             string section = textSection.Text.Trim();
             byte[] image = imgProcess();
-            if (nom == "" || post_nom == "" || prenom == "" || promotion == "")
+            if (nom == "" || post_nom == "" || prenom == "" || promotion == "" || section == "")
             {
                 MessageBox.Show("All fields are required");
+            }
+            else
+            {
+                StudentModel studentmodel = new StudentModel(nom,post_nom,prenom,promotion,section);
+                StudentController.addStudent(studentmodel, image);
+                clear();
+                _parent.display();
             }
         }
         private void btnErase_Click(object sender, EventArgs e)
