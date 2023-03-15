@@ -12,6 +12,7 @@ namespace StudentCardGenerate
 {
     public partial class Main : Form
     {
+        AddStudent addstudent;
         public Main()
         {
             InitializeComponent();
@@ -37,7 +38,7 @@ namespace StudentCardGenerate
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-
+            addstudent.ShowDialog();
         }
     }
 }
