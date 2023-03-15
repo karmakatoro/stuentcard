@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddImg)).BeginInit();
@@ -55,6 +56,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panMain
@@ -77,12 +79,13 @@
             this.panMain.Controls.Add(this.label2);
             this.panMain.Location = new System.Drawing.Point(14, 52);
             this.panMain.Name = "panMain";
-            this.panMain.Size = new System.Drawing.Size(465, 258);
+            this.panMain.Size = new System.Drawing.Size(465, 267);
             this.panMain.TabIndex = 7;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Indigo;
             this.label7.Location = new System.Drawing.Point(313, 9);
@@ -103,6 +106,7 @@
             // 
             // btnAddImg
             // 
+            this.btnAddImg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddImg.Image = ((System.Drawing.Image)(resources.GetObject("btnAddImg.Image")));
             this.btnAddImg.Location = new System.Drawing.Point(282, 9);
             this.btnAddImg.Name = "btnAddImg";
@@ -114,9 +118,11 @@
             // 
             // textPromotion
             // 
-            this.textPromotion.Location = new System.Drawing.Point(17, 221);
+            this.textPromotion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textPromotion.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textPromotion.Location = new System.Drawing.Point(17, 230);
             this.textPromotion.Name = "textPromotion";
-            this.textPromotion.Size = new System.Drawing.Size(248, 20);
+            this.textPromotion.Size = new System.Drawing.Size(248, 25);
             this.textPromotion.TabIndex = 19;
             // 
             // label6
@@ -124,7 +130,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Indigo;
-            this.label6.Location = new System.Drawing.Point(13, 197);
+            this.label6.Location = new System.Drawing.Point(13, 202);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 21);
             this.label6.TabIndex = 18;
@@ -132,6 +138,7 @@
             // 
             // btnErase
             // 
+            this.btnErase.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnErase.Image = ((System.Drawing.Image)(resources.GetObject("btnErase.Image")));
             this.btnErase.Location = new System.Drawing.Point(367, 207);
             this.btnErase.Name = "btnErase";
@@ -143,6 +150,7 @@
             // 
             // btnSave
             // 
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.Location = new System.Drawing.Point(412, 207);
             this.btnSave.Name = "btnSave";
@@ -154,30 +162,38 @@
             // 
             // textSection
             // 
+            this.textSection.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textSection.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSection.Location = new System.Drawing.Point(17, 174);
             this.textSection.Name = "textSection";
-            this.textSection.Size = new System.Drawing.Size(248, 20);
+            this.textSection.Size = new System.Drawing.Size(248, 25);
             this.textSection.TabIndex = 12;
             // 
             // textPrename
             // 
+            this.textPrename.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textPrename.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPrename.Location = new System.Drawing.Point(17, 127);
             this.textPrename.Name = "textPrename";
-            this.textPrename.Size = new System.Drawing.Size(248, 20);
+            this.textPrename.Size = new System.Drawing.Size(248, 25);
             this.textPrename.TabIndex = 13;
             // 
             // textSecond
             // 
+            this.textSecond.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textSecond.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSecond.Location = new System.Drawing.Point(17, 80);
             this.textSecond.Name = "textSecond";
-            this.textSecond.Size = new System.Drawing.Size(248, 20);
+            this.textSecond.Size = new System.Drawing.Size(248, 25);
             this.textSecond.TabIndex = 14;
             // 
             // textName
             // 
+            this.textName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textName.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textName.Location = new System.Drawing.Point(17, 33);
             this.textName.Name = "textName";
-            this.textName.Size = new System.Drawing.Size(248, 20);
+            this.textName.Size = new System.Drawing.Size(248, 25);
             this.textName.TabIndex = 15;
             // 
             // label5
@@ -238,6 +254,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Indigo;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -256,6 +273,18 @@
             this.btnExit.TabIndex = 6;
             this.btnExit.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(458, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // EditStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -263,6 +292,7 @@
             this.ClientSize = new System.Drawing.Size(491, 331);
             this.Controls.Add(this.panMain);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EditStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Student";
@@ -276,6 +306,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -301,5 +332,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btnExit;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

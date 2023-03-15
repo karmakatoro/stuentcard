@@ -118,6 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAxJJREFUeF7t
+        msuKFEEURHvhzLeIjh+kK/G1Vn9D0BF14Zf4+AfBYUYXvhVxI6Ko4EKljeiOhDLJ7r73Zg1WOnkgNl2V
+        0Tey6Hx1zTqdTqfT6XSszOfzHegGdAB9hP41rGEfug6dUJnjA/Nt6Db0C5oqrO0mtKWyxwGGDP8QaoX7
+        0LbKrwdmdxe2bXFH5dcBo1PQ74VlW/DnUD8mwOTWwq5NdhUjDkyeLr2aZF8x4sDk29KrSb4qRhwZNYti
+        xJFPsyhGHPl4+Qxx7PgA1cwgbEsPen3hB14UI458rPyAuCQ9PdBl6BXk5SXEtkMvLsH5HWYUI458rLDA
+        YcFJ56HnkBXeyzYlr13IjGLEkY+FT1Cp4CQGegFtYl146gzEn5gJxYgjHwuPoVLBQ23qBF5bFz5pDzKh
+        GHHkY+E9VCo211motLh6AvFaqU0ufpcJxYgjHwscsfNBa5X4lDnIJaxPnroKmWcWxYgjHysc7c9BpcJz
+        XYB4PzvCGp73uWYUxYgjHw/PIE8nUKVruejpmUkWKEYc+Xh5DV2ESkEiotcbyI1ixJFPhLE6gR70CqEY
+        ceQTpbYTqsITxYgjnxo4aEU6oTo8UYw48qnF2wm81zXar0Ix4sinliPdAZ5pcajQtJejGHHkE4VLXuvy
+        tiR2AjswjGLEkU8Ez9p+nVbtHUwoRhz5eBkrfBK96OlGMeLIx4NnY+NZCtPTcp7wF4oRRz5WOHJ7Njbc
+        CLGNpxNcs4NixJGPBW5Rr0ClwnPlT9OzI5zsdvgdVCo41yWotLHhZ7xWapOL32VCMeLIxwKPqUrFDpU/
+        +Rzr+DHJIzEeVJaKTWIwy8JmUydM9lCU8Mi6VLQ1fGLdyfBkj8XJmH+MsE1zf4wk+B/BI+gtZB6xC7At
+        PehFTzeKEUc+zaIYceTTLIoRBx7fl1ZNMsoLEuGd2AQ4UIw4MOGo3irXFCMOTE5CU347dBU/oeOKUQeM
+        XIuPiVD/9BMw24IeLGzb4B50TOWPAwyP7svSQ2CeXpfnEZVrWXpIsAa+un+4r8t3Op1Op9P5z5jN/gCf
+        ER27qBJ6QgAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAxJJREFUeF7t

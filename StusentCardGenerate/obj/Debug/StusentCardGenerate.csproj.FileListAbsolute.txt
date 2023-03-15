@@ -10,3 +10,4 @@ c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\Stuse
 c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StudentCardGenerate.AddStudent.resources
 c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StudentCardGenerate.EditStudent.resources
 c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StudentCardGenerate.Main.resources
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StusentCardGenerate.ShowStudent.resources

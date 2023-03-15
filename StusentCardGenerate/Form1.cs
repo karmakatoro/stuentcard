@@ -14,11 +14,13 @@ namespace StudentCardGenerate
     {
         AddStudent addstudent;
         EditStudent editstudent;
+        StusentCardGenerate.ShowStudent showstudent;
         public Main()
         {
             InitializeComponent();
             addstudent = new AddStudent(this);
             editstudent = new EditStudent(this);
+            showstudent = new StusentCardGenerate.ShowStudent(this);
         }
         public void display()
         {
@@ -47,7 +49,17 @@ namespace StudentCardGenerate
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.ColumnIndex == 1)
+            if(e.ColumnIndex == 0){
+                showstudent.id = dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+                showstudent.nom = dataGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
+                showstudent.post_nom = dataGridView.Rows[e.RowIndex].Cells[5].Value.ToString();
+                showstudent.prenom = dataGridView.Rows[e.RowIndex].Cells[6].Value.ToString();
+                showstudent.section = dataGridView.Rows[e.RowIndex].Cells[8].Value.ToString();
+                showstudent.promotion = dataGridView.Rows[e.RowIndex].Cells[7].Value.ToString();
+                showstudent.initInfos();
+                showstudent.ShowDialog();
+            }
+            else if(e.ColumnIndex == 1)
             {
                 
                 editstudent.id = dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();

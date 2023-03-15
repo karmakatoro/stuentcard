@@ -52,6 +52,12 @@ namespace StudentCardGenerate
             byte[] img = memorystream.ToArray();
             return img;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         public void save()
         {
             string nom = textName.Text.Trim();
