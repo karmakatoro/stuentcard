@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Forms;
 using System.IO;
-namespace StusentCardGenerate
+namespace StudentCardGenerate
 {
     class StudentController
     {

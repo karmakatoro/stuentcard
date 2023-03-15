@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StusentCardGenerate
+namespace StudentCardGenerate
 {
     public partial class EditStudent : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace StusentCardGenerate
+﻿namespace StudentCardGenerate
 {
     partial class Main
     {
@@ -82,6 +82,7 @@
             this.btnNew.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnNew.TabIndex = 5;
             this.btnNew.TabStop = false;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // dataGridView
             // 
@@ -153,7 +154,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(954, 38);
+            this.panel1.Size = new System.Drawing.Size(954, 35);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 

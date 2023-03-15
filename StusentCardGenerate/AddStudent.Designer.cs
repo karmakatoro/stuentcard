@@ -1,4 +1,4 @@
-﻿namespace StusentCardGenerate
+﻿namespace StudentCardGenerate
 {
     partial class AddStudent
     {
@@ -33,6 +33,11 @@
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panMain = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.picImage = new System.Windows.Forms.PictureBox();
+            this.btnAddImg = new System.Windows.Forms.PictureBox();
+            this.textPromotion = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnErase = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.PictureBox();
             this.textSection = new System.Windows.Forms.TextBox();
@@ -43,18 +48,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textPromotion = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnAddImg = new System.Windows.Forms.PictureBox();
-            this.picImage = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnErase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddImg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -112,6 +112,55 @@
             this.panMain.Size = new System.Drawing.Size(465, 258);
             this.panMain.TabIndex = 5;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Indigo;
+            this.label7.Location = new System.Drawing.Point(315, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 21);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Add Picture";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // picImage
+            // 
+            this.picImage.Location = new System.Drawing.Point(282, 33);
+            this.picImage.Name = "picImage";
+            this.picImage.Size = new System.Drawing.Size(169, 161);
+            this.picImage.TabIndex = 21;
+            this.picImage.TabStop = false;
+            // 
+            // btnAddImg
+            // 
+            this.btnAddImg.Image = ((System.Drawing.Image)(resources.GetObject("btnAddImg.Image")));
+            this.btnAddImg.Location = new System.Drawing.Point(282, 9);
+            this.btnAddImg.Name = "btnAddImg";
+            this.btnAddImg.Size = new System.Drawing.Size(27, 21);
+            this.btnAddImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAddImg.TabIndex = 20;
+            this.btnAddImg.TabStop = false;
+            this.btnAddImg.Click += new System.EventHandler(this.btnAddImg_Click);
+            // 
+            // textPromotion
+            // 
+            this.textPromotion.Location = new System.Drawing.Point(17, 221);
+            this.textPromotion.Name = "textPromotion";
+            this.textPromotion.Size = new System.Drawing.Size(248, 20);
+            this.textPromotion.TabIndex = 19;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Indigo;
+            this.label6.Location = new System.Drawing.Point(13, 197);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 21);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Promotion";
+            // 
             // btnErase
             // 
             this.btnErase.Image = ((System.Drawing.Image)(resources.GetObject("btnErase.Image")));
@@ -121,6 +170,7 @@
             this.btnErase.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnErase.TabIndex = 17;
             this.btnErase.TabStop = false;
+            this.btnErase.Click += new System.EventHandler(this.btnErase_Click);
             // 
             // btnSave
             // 
@@ -205,53 +255,6 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Name";
             // 
-            // textPromotion
-            // 
-            this.textPromotion.Location = new System.Drawing.Point(17, 221);
-            this.textPromotion.Name = "textPromotion";
-            this.textPromotion.Size = new System.Drawing.Size(248, 20);
-            this.textPromotion.TabIndex = 19;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Indigo;
-            this.label6.Location = new System.Drawing.Point(13, 197);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 21);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Promotion";
-            // 
-            // btnAddImg
-            // 
-            this.btnAddImg.Image = ((System.Drawing.Image)(resources.GetObject("btnAddImg.Image")));
-            this.btnAddImg.Location = new System.Drawing.Point(282, 9);
-            this.btnAddImg.Name = "btnAddImg";
-            this.btnAddImg.Size = new System.Drawing.Size(27, 21);
-            this.btnAddImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnAddImg.TabIndex = 20;
-            this.btnAddImg.TabStop = false;
-            // 
-            // picImage
-            // 
-            this.picImage.Location = new System.Drawing.Point(282, 33);
-            this.picImage.Name = "picImage";
-            this.picImage.Size = new System.Drawing.Size(169, 161);
-            this.picImage.TabIndex = 21;
-            this.picImage.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Indigo;
-            this.label7.Location = new System.Drawing.Point(315, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 21);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Add Picture";
-            // 
             // AddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,10 +270,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.panMain.ResumeLayout(false);
             this.panMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnErase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddImg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
             this.ResumeLayout(false);
 
         }

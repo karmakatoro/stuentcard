@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StusentCardGenerate
+namespace StudentCardGenerate
 {
     public partial class Main : Form
     {
@@ -29,6 +29,11 @@ namespace StusentCardGenerate
             {
                 Application.Exit();
             }
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace StusentCardGenerate.Properties
+namespace StudentCardGenerate.Properties
 {
 
 
