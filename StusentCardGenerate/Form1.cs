@@ -29,8 +29,6 @@ namespace StusentCardGenerate
             {
                 Application.Exit();
             }
-
-            
         }
     }
 }
