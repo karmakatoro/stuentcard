@@ -13,13 +13,14 @@ namespace StusentCardGenerate
     {
         public static void addStudent(StudentModel student, byte[] img)
         {
-            string query = "INSERT INTO t_student (nom,post_nom,prenom,promotion,image) VALUES (@nom,@post_nom,@prenom,@promotion,@image)";
+            string query = "INSERT INTO t_student (nom,post_nom,prenom,section,promotion,image) VALUES (@nom,@post_nom,@prenom,@section,@promotion,@image)";
             MySqlConnection con = DB.getConnection();
             MySqlCommand cmd = new MySqlCommand(query, con);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.Add("@nom", MySqlDbType.VarChar).Value = student.Nom;
             cmd.Parameters.Add("@post_nom", MySqlDbType.VarChar).Value = student.Post_nom;
             cmd.Parameters.Add("@prenom", MySqlDbType.VarChar).Value = student.Prenom;
+            cmd.Parameters.Add("@section", MySqlDbType.VarChar).Value = student.Section;
             cmd.Parameters.Add("@promotion", MySqlDbType.VarChar).Value = student.Promotion;
             cmd.Parameters.Add("@image", MySqlDbType.LongBlob).Value = img;
 
@@ -37,7 +38,7 @@ namespace StusentCardGenerate
         }
         public static void updateStudent(StudentModel student, string id, byte[] img)
         {
-            string query = "UPDATE t_student SET nom = @nom,post_nom = @post_nom, prenom = @prenom, promotion = @promotion, image = @image WHERE id= @id";
+            string query = "UPDATE t_student SET nom = @nom,post_nom = @post_nom, prenom = @prenom, section = @section, promotion = @promotion, image = @image WHERE id= @id";
             MySqlConnection con = DB.getConnection();
             MySqlCommand cmd = new MySqlCommand(query, con);
             cmd.CommandType = CommandType.Text;
@@ -45,6 +46,7 @@ namespace StusentCardGenerate
             cmd.Parameters.Add("@nom", MySqlDbType.VarChar).Value = student.Nom;
             cmd.Parameters.Add("@post_nom", MySqlDbType.VarChar).Value = student.Post_nom;
             cmd.Parameters.Add("@prenom", MySqlDbType.VarChar).Value = student.Prenom;
+            cmd.Parameters.Add("@section", MySqlDbType.VarChar).Value = student.Section;
             cmd.Parameters.Add("@promotion", MySqlDbType.VarChar).Value = student.Promotion;
             cmd.Parameters.Add("@image", MySqlDbType.LongBlob).Value = img;
 

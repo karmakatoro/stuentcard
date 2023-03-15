@@ -1,1 +1,10 @@
 c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\bin\Debug\StusentCardGenerate.exe.config
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\bin\Debug\StusentCardGenerate.exe
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\bin\Debug\StusentCardGenerate.pdb
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\bin\Debug\MySql.Data.dll
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StusentCardGenerate.csprojResolveAssemblyReference.cache
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StusentCardGenerate.Properties.Resources.resources
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StusentCardGenerate.csproj.GenerateResource.Cache
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StusentCardGenerate.exe
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StusentCardGenerate.pdb
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StusentCardGenerate.Main.resources

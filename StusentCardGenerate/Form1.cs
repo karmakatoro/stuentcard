@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace StusentCardGenerate
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
-        public Form1()
+        public Main()
         {
             InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogresult = MessageBox.Show("Are you sure to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if(dialogresult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+
+            
         }
     }
 }
