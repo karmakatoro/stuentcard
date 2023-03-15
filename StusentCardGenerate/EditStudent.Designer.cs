@@ -266,6 +266,7 @@
             this.Name = "EditStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Student";
+            this.Load += new System.EventHandler(this.EditStudent_Load);
             this.panMain.ResumeLayout(false);
             this.panMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();

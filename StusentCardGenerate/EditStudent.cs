@@ -7,38 +7,92 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace StudentCardGenerate
 {
     public partial class EditStudent : Form
     {
-        private readonly AddStudent _parent;
-        public int id;
-        public string nom, post_nom, prenom, section, promotion;
+        private readonly Main _parent;
+        public string id, nom, post_nom, prenom, section, promotion;
 
+        public void fillFields()
+        {
+            textName.Text = nom;
+            textSecond.Text = post_nom;
+            textPrename.Text = prenom;
+            textSection.Text = section;
+            textPromotion.Text = promotion;
+
+            StudentController.getImage(id, picImage, "image");
+        }
+        public void addImage()
+        {
+            OpenFileDialog openfiledialog = new OpenFileDialog();
+            openfiledialog.Filter = "Choose Image(*.jpg; *.png; *.gif)|*.jpg; *.png; *.gif";
+            if (openfiledialog.ShowDialog() == DialogResult.OK)
+            {
+                picImage.Image = Image.FromFile(openfiledialog.FileName);
+            }
+        }
+        public byte[] imgProcess()
+        {
+            MemoryStream memorystream = new MemoryStream();
+            picImage.Image.Save(memorystream, picImage.Image.RawFormat);
+            byte[] img = memorystream.ToArray();
+            return img;
+        }
+        public void save()
+        {
+            string nom = textName.Text.Trim();
+            string post_nom = textSecond.Text.Trim();
+            string prenom = textPrename.Text.Trim();
+            string promotion = textPromotion.Text.Trim();
+            string section = textSection.Text.Trim();
+            byte[] image = imgProcess();
+            if (nom == "" || post_nom == "" || prenom == "" || promotion == "" || section == "")
+            {
+                MessageBox.Show("All fields are required");
+            }
+            else
+            {
+                StudentModel studentmodel = new StudentModel(nom, post_nom, prenom, promotion, section);
+                StudentController.updateStudent(studentmodel,id,image);
+                clear();
+                _parent.display();
+            }
+        }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            _parent.save();
+            save();
+        }
+
+        private void EditStudent_Load(object sender, EventArgs e)
+        {
+            
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
-            _parent.addImage();
+            addImage();
         }
 
         private void btnAddImg_Click(object sender, EventArgs e)
         {
-            _parent.addImage();
+            addImage();
         }
-
-        public EditStudent(AddStudent parent)
+        public void clear()
+        {
+            textName.Text = textSecond.Text = textPrename.Text = textSection.Text = textPromotion.Text = string.Empty;
+        }
+        public EditStudent(Main parent)
         {
             InitializeComponent();
             _parent = parent;
         }
         private void btnErase_Click(object sender, EventArgs e)
         {
-            _parent.clear();
+           clear();
         }
     }
 }

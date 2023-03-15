@@ -109,7 +109,7 @@
             this.panMain.Controls.Add(this.label2);
             this.panMain.Location = new System.Drawing.Point(16, 56);
             this.panMain.Name = "panMain";
-            this.panMain.Size = new System.Drawing.Size(465, 258);
+            this.panMain.Size = new System.Drawing.Size(465, 270);
             this.panMain.TabIndex = 5;
             // 
             // label7
@@ -147,7 +147,7 @@
             // textPromotion
             // 
             this.textPromotion.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPromotion.Location = new System.Drawing.Point(17, 221);
+            this.textPromotion.Location = new System.Drawing.Point(17, 230);
             this.textPromotion.Name = "textPromotion";
             this.textPromotion.Size = new System.Drawing.Size(248, 25);
             this.textPromotion.TabIndex = 19;
@@ -157,7 +157,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Indigo;
-            this.label6.Location = new System.Drawing.Point(13, 197);
+            this.label6.Location = new System.Drawing.Point(13, 202);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 21);
             this.label6.TabIndex = 18;
@@ -265,7 +265,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 331);
+            this.ClientSize = new System.Drawing.Size(491, 338);
             this.Controls.Add(this.panMain);
             this.Controls.Add(this.panel1);
             this.Name = "AddStudent";

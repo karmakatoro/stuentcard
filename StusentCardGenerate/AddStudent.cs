@@ -17,6 +17,10 @@ namespace StudentCardGenerate
         public int id;
         public string nom, post_nom, prenom, section, promotion;
 
+        public void toUpdate()
+        {
+            
+        }
         public void clear()
         {
             textName.Text = textSecond.Text = textPrename.Text = textSection.Text = textPromotion.Text = string.Empty;
