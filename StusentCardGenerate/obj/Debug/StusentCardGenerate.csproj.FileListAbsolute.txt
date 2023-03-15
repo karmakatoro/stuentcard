@@ -7,4 +7,6 @@ c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\Stuse
 c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StusentCardGenerate.csproj.GenerateResource.Cache
 c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StusentCardGenerate.exe
 c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StusentCardGenerate.pdb
-c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StusentCardGenerate.Main.resources
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StudentCardGenerate.AddStudent.resources
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StudentCardGenerate.EditStudent.resources
+c:\users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\obj\Debug\StudentCardGenerate.Main.resources

@@ -16,7 +16,11 @@ namespace StudentCardGenerate
         {
             InitializeComponent();
         }
-
+        public void display()
+        {
+            string query = "SELECT id,nom,post_nom,prenom,section,promotion FROM t_student";
+            StudentController.displayAndSearch(query, dataGridView);
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
