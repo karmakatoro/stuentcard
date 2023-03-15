@@ -129,6 +129,7 @@
             this.picImage.Location = new System.Drawing.Point(282, 33);
             this.picImage.Name = "picImage";
             this.picImage.Size = new System.Drawing.Size(169, 161);
+            this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picImage.TabIndex = 21;
             this.picImage.TabStop = false;
             // 
@@ -145,9 +146,10 @@
             // 
             // textPromotion
             // 
+            this.textPromotion.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPromotion.Location = new System.Drawing.Point(17, 221);
             this.textPromotion.Name = "textPromotion";
-            this.textPromotion.Size = new System.Drawing.Size(248, 20);
+            this.textPromotion.Size = new System.Drawing.Size(248, 25);
             this.textPromotion.TabIndex = 19;
             // 
             // label6
@@ -185,30 +187,34 @@
             // 
             // textSection
             // 
+            this.textSection.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSection.Location = new System.Drawing.Point(17, 174);
             this.textSection.Name = "textSection";
-            this.textSection.Size = new System.Drawing.Size(248, 20);
+            this.textSection.Size = new System.Drawing.Size(248, 25);
             this.textSection.TabIndex = 12;
             // 
             // textPrename
             // 
+            this.textPrename.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPrename.Location = new System.Drawing.Point(17, 127);
             this.textPrename.Name = "textPrename";
-            this.textPrename.Size = new System.Drawing.Size(248, 20);
+            this.textPrename.Size = new System.Drawing.Size(248, 25);
             this.textPrename.TabIndex = 13;
             // 
             // textSecond
             // 
+            this.textSecond.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSecond.Location = new System.Drawing.Point(17, 80);
             this.textSecond.Name = "textSecond";
-            this.textSecond.Size = new System.Drawing.Size(248, 20);
+            this.textSecond.Size = new System.Drawing.Size(248, 25);
             this.textSecond.TabIndex = 14;
             // 
             // textName
             // 
+            this.textName.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textName.Location = new System.Drawing.Point(17, 33);
             this.textName.Name = "textName";
-            this.textName.Size = new System.Drawing.Size(248, 20);
+            this.textName.Size = new System.Drawing.Size(248, 25);
             this.textName.TabIndex = 15;
             // 
             // label5

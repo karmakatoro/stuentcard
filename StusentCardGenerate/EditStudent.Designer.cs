@@ -90,12 +90,14 @@
             this.label7.Size = new System.Drawing.Size(96, 21);
             this.label7.TabIndex = 22;
             this.label7.Text = "Add Picture";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // picImage
             // 
             this.picImage.Location = new System.Drawing.Point(282, 33);
             this.picImage.Name = "picImage";
             this.picImage.Size = new System.Drawing.Size(169, 161);
+            this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picImage.TabIndex = 21;
             this.picImage.TabStop = false;
             // 
@@ -108,6 +110,7 @@
             this.btnAddImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnAddImg.TabIndex = 20;
             this.btnAddImg.TabStop = false;
+            this.btnAddImg.Click += new System.EventHandler(this.btnAddImg_Click);
             // 
             // textPromotion
             // 
@@ -136,6 +139,7 @@
             this.btnErase.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnErase.TabIndex = 17;
             this.btnErase.TabStop = false;
+            this.btnErase.Click += new System.EventHandler(this.btnErase_Click);
             // 
             // btnSave
             // 
@@ -146,6 +150,7 @@
             this.btnSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSave.TabIndex = 16;
             this.btnSave.TabStop = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // textSection
             // 

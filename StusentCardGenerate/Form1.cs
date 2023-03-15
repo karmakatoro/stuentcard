@@ -16,6 +16,7 @@ namespace StudentCardGenerate
         public Main()
         {
             InitializeComponent();
+            addstudent = new AddStudent(this);
         }
         public void display()
         {
@@ -38,6 +39,7 @@ namespace StudentCardGenerate
 
         private void btnNew_Click(object sender, EventArgs e)
         {
+            addstudent.clear();
             addstudent.ShowDialog();
         }
     }
