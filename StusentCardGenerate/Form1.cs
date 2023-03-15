@@ -34,7 +34,7 @@ namespace StudentCardGenerate
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            DialogResult dialogresult = MessageBox.Show("Are you sure to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult dialogresult = MessageBox.Show("Are you sure to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if(dialogresult == DialogResult.Yes)
             {
                 Application.Exit();
@@ -75,7 +75,7 @@ namespace StudentCardGenerate
                 string studid = dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
                 string studname = dataGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
                 string studpost_name = dataGridView.Rows[e.RowIndex].Cells[5].Value.ToString(); ;
-                DialogResult dialog = MessageBox.Show("Are you sure to delete " + studname + " " + studpost_name + "?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                DialogResult dialog = MessageBox.Show("Are you sure to delete " + studname + " " + studpost_name + "?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialog == DialogResult.Yes)
                 {
                     StudentController.deleteStudent(studname, studid);
