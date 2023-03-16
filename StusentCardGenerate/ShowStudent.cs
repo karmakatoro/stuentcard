@@ -67,7 +67,7 @@ namespace StusentCardGenerate
             textCardNames.Text = nom + " "+ " "+post_nom +" "+ prenom;
             textCardPromotion.Text = promotion;
             textCardSection.Text = section;
-            textCardRollNumber.Text = "2184IHS"+id;
+            textCardRollNumber.Text = "21IGGJ"+id;
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
