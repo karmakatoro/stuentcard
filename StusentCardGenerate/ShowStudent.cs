@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
 using QRCoder;
+using System.Security.Cryptography;
 
 namespace StusentCardGenerate
 {
@@ -72,14 +73,30 @@ namespace StusentCardGenerate
         {
             this.Close();
         }
+        public string hashString(string text)
+        {
+            if (String.IsNullOrEmpty(text))
+            {
+                return String.Empty;
+            }
+           
+            using (var sha = new System.Security.Cryptography.SHA1Managed())
+            {
+                byte[] textBytes = System.Text.Encoding.UTF8.GetBytes(text);
+                byte[] hashBytes = sha.ComputeHash(textBytes);
 
+                string hash = BitConverter.ToString(hashBytes);
+                return hash;
+
+            }
+        }
         private void ShowStudent_Load(object sender, EventArgs e)
         {
             StudentCardGenerate.StudentController.getImage(id, picImage, "image");
             StudentCardGenerate.StudentController.getImage(id, picCardImage, "image");
 
             int idHash = id.GetHashCode();
-            string studCode = Convert.ToString(idHash);
+            string studCode = hashString(Convert.ToString(idHash));
             QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
             var MyData = QG.CreateQrCode(studCode, QRCodeGenerator.ECCLevel.H);
             var code = new QRCoder.QRCode(MyData);

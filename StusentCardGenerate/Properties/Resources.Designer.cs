@@ -93,9 +93,39 @@ namespace StusentCardGenerate.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap design__763_ {
+            get {
+                object obj = ResourceManager.GetObject("design (763)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap design__789_ {
             get {
                 object obj = ResourceManager.GetObject("design (789)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap design__839_ {
+            get {
+                object obj = ResourceManager.GetObject("design (839)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap design__844_ {
+            get {
+                object obj = ResourceManager.GetObject("design (844)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
