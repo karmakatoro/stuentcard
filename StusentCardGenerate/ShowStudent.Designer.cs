@@ -275,7 +275,7 @@
             this.panCard.Controls.Add(this.label9);
             this.panCard.Controls.Add(this.picCardImage);
             this.panCard.Controls.Add(this.label8);
-            this.panCard.Location = new System.Drawing.Point(16, 247);
+            this.panCard.Location = new System.Drawing.Point(17, 224);
             this.panCard.Name = "panCard";
             this.panCard.Size = new System.Drawing.Size(413, 210);
             this.panCard.TabIndex = 9;
@@ -477,7 +477,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 481);
+            this.ClientSize = new System.Drawing.Size(442, 451);
             this.Controls.Add(this.panCard);
             this.Controls.Add(this.panMain);
             this.Controls.Add(this.panel1);

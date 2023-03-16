@@ -85,7 +85,7 @@ namespace StusentCardGenerate
                 byte[] textBytes = System.Text.Encoding.UTF8.GetBytes(text);
                 byte[] hashBytes = sha.ComputeHash(textBytes);
 
-                string hash = BitConverter.ToString(hashBytes);
+                string hash = BitConverter.ToString(hashBytes).Replace("-", String.Empty);
                 return hash;
 
             }
