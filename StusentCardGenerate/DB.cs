@@ -18,7 +18,7 @@ namespace StudentCardGenerate
             {
                 con.Open();
             }
-            catch (MySqlException ex)
+            catch (MySqlException)
             {
 
                 MessageBox.Show("Could not connect to the database", "Connection", MessageBoxButtons.OK, MessageBoxIcon.Error);

@@ -37,7 +37,7 @@ namespace StusentCardGenerate
         private void printDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             Rectangle rectangle = e.PageBounds;
-            e.Graphics.DrawImage(bitmap, (rectangle.Width /2) - (this.panCard.Width / 2), (this.panCard.Location.Y));
+            e.Graphics.DrawImage(bitmap, (rectangle.Width) - (this.panCard.Width * 2), (this.panCard.Location.X /2));
         }
 
         private void label8_Click(object sender, EventArgs e)
