@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
+using QRCoder;
 
 namespace StusentCardGenerate
 {
@@ -76,6 +77,13 @@ namespace StusentCardGenerate
         {
             StudentCardGenerate.StudentController.getImage(id, picImage, "image");
             StudentCardGenerate.StudentController.getImage(id, picCardImage, "image");
+
+            int idHash = id.GetHashCode();
+            string studCode = Convert.ToString(idHash);
+            QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
+            var MyData = QG.CreateQrCode(studCode, QRCodeGenerator.ECCLevel.H);
+            var code = new QRCoder.QRCode(MyData);
+            picCardQR.Image = code.GetGraphic(50);
         }
     }
 }

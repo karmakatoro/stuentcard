@@ -30,3 +30,4 @@ C:\Users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\Stuse
 C:\Users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\bin\Debug\System.Buffers.xml
 C:\Users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\bin\Debug\System.Memory.xml
 C:\Users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\karma03\documents\visual studio 2015\Projects\StusentCardGenerate\StusentCardGenerate\bin\Debug\QRCoder.dll

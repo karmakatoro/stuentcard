@@ -54,7 +54,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.textCardRollNumber = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textCardId = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -64,16 +63,17 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.btnPrint = new System.Windows.Forms.PictureBox();
+            this.picCardQR = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panMain.SuspendLayout();
             this.panCard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCardQR)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -259,8 +259,9 @@
             // panCard
             // 
             this.panCard.BackColor = System.Drawing.Color.Transparent;
-            this.panCard.BackgroundImage = global::StusentCardGenerate.Properties.Resources.design__874_;
+            this.panCard.BackgroundImage = global::StusentCardGenerate.Properties.Resources.design__789_;
             this.panCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panCard.Controls.Add(this.picCardQR);
             this.panCard.Controls.Add(this.textCardSection);
             this.panCard.Controls.Add(this.label14);
             this.panCard.Controls.Add(this.textCardNames);
@@ -269,7 +270,6 @@
             this.panCard.Controls.Add(this.label12);
             this.panCard.Controls.Add(this.textCardRollNumber);
             this.panCard.Controls.Add(this.label11);
-            this.panCard.Controls.Add(this.pictureBox5);
             this.panCard.Controls.Add(this.pictureBox3);
             this.panCard.Controls.Add(this.textCardId);
             this.panCard.Controls.Add(this.label9);
@@ -320,9 +320,9 @@
             this.label13.ForeColor = System.Drawing.Color.Gainsboro;
             this.label13.Location = new System.Drawing.Point(15, 125);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(119, 20);
+            this.label13.Size = new System.Drawing.Size(145, 20);
             this.label13.TabIndex = 40;
-            this.label13.Text = "Name & Surname";
+            this.label13.Text = "Name and Surname";
             // 
             // textCardPromotion
             // 
@@ -368,16 +368,6 @@
             this.label11.TabIndex = 36;
             this.label11.Text = "Roll number";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::StusentCardGenerate.Properties.Resources.qrcode_localhost1;
-            this.pictureBox5.Location = new System.Drawing.Point(8, 8);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(99, 95);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 35;
-            this.pictureBox5.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::StusentCardGenerate.Properties.Resources.image;
@@ -393,7 +383,7 @@
             this.textCardId.AutoSize = true;
             this.textCardId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textCardId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
-            this.textCardId.Location = new System.Drawing.Point(345, 185);
+            this.textCardId.Location = new System.Drawing.Point(317, 185);
             this.textCardId.Name = "textCardId";
             this.textCardId.Size = new System.Drawing.Size(23, 21);
             this.textCardId.TabIndex = 32;
@@ -474,6 +464,15 @@
             this.btnPrint.TabStop = false;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
+            // picCardQR
+            // 
+            this.picCardQR.Location = new System.Drawing.Point(7, 11);
+            this.picCardQR.Name = "picCardQR";
+            this.picCardQR.Size = new System.Drawing.Size(105, 106);
+            this.picCardQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCardQR.TabIndex = 44;
+            this.picCardQR.TabStop = false;
+            // 
             // ShowStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,13 +492,13 @@
             this.panMain.PerformLayout();
             this.panCard.ResumeLayout(false);
             this.panCard.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCardQR)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -532,7 +531,6 @@
         private System.Windows.Forms.Label textCardId;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox picCardImage;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label textCardSection;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label textCardNames;
@@ -541,5 +539,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label textCardRollNumber;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox picCardQR;
     }
 }
