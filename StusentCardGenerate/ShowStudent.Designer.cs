@@ -33,26 +33,28 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnPrint = new System.Windows.Forms.PictureBox();
             this.panMain = new System.Windows.Forms.Panel();
-            this.picImage = new System.Windows.Forms.PictureBox();
-            this.textPromotion = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.PictureBox();
-            this.textSection = new System.Windows.Forms.Label();
-            this.textPrename = new System.Windows.Forms.Label();
-            this.textSecond = new System.Windows.Forms.Label();
-            this.textName = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.picImage = new System.Windows.Forms.PictureBox();
+            this.textPromotion = new System.Windows.Forms.Label();
+            this.textSection = new System.Windows.Forms.Label();
+            this.textPrename = new System.Windows.Forms.Label();
+            this.textSecond = new System.Windows.Forms.Label();
+            this.textName = new System.Windows.Forms.Label();
+            this.printDocument = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             this.panMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,7 +63,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnSave);
+            this.panel1.Controls.Add(this.btnPrint);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -101,6 +103,18 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Infos";
             // 
+            // btnPrint
+            // 
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.Location = new System.Drawing.Point(347, 5);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(28, 27);
+            this.btnPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnPrint.TabIndex = 16;
+            this.btnPrint.TabStop = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // panMain
             // 
             this.panMain.BackColor = System.Drawing.Color.White;
@@ -121,80 +135,16 @@
             this.panMain.Size = new System.Drawing.Size(395, 165);
             this.panMain.TabIndex = 8;
             // 
-            // picImage
+            // label7
             // 
-            this.picImage.Location = new System.Drawing.Point(258, 20);
-            this.picImage.Name = "picImage";
-            this.picImage.Size = new System.Drawing.Size(119, 105);
-            this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picImage.TabIndex = 21;
-            this.picImage.TabStop = false;
-            // 
-            // textPromotion
-            // 
-            this.textPromotion.AutoSize = true;
-            this.textPromotion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPromotion.ForeColor = System.Drawing.Color.Indigo;
-            this.textPromotion.Location = new System.Drawing.Point(133, 112);
-            this.textPromotion.Name = "textPromotion";
-            this.textPromotion.Size = new System.Drawing.Size(84, 21);
-            this.textPromotion.TabIndex = 18;
-            this.textPromotion.Text = "Promotion";
-            // 
-            // btnSave
-            // 
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(347, 5);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(28, 27);
-            this.btnSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSave.TabIndex = 16;
-            this.btnSave.TabStop = false;
-            // 
-            // textSection
-            // 
-            this.textSection.AutoSize = true;
-            this.textSection.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSection.ForeColor = System.Drawing.Color.Indigo;
-            this.textSection.Location = new System.Drawing.Point(133, 133);
-            this.textSection.Name = "textSection";
-            this.textSection.Size = new System.Drawing.Size(61, 21);
-            this.textSection.TabIndex = 8;
-            this.textSection.Text = "Section";
-            // 
-            // textPrename
-            // 
-            this.textPrename.AutoSize = true;
-            this.textPrename.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPrename.ForeColor = System.Drawing.Color.Indigo;
-            this.textPrename.Location = new System.Drawing.Point(133, 91);
-            this.textPrename.Name = "textPrename";
-            this.textPrename.Size = new System.Drawing.Size(72, 21);
-            this.textPrename.TabIndex = 9;
-            this.textPrename.Text = "Prename";
-            // 
-            // textSecond
-            // 
-            this.textSecond.AutoSize = true;
-            this.textSecond.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSecond.ForeColor = System.Drawing.Color.Indigo;
-            this.textSecond.Location = new System.Drawing.Point(133, 70);
-            this.textSecond.Name = "textSecond";
-            this.textSecond.Size = new System.Drawing.Size(107, 21);
-            this.textSecond.TabIndex = 10;
-            this.textSecond.Text = "Second Name";
-            // 
-            // textName
-            // 
-            this.textName.AutoSize = true;
-            this.textName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textName.ForeColor = System.Drawing.Color.Indigo;
-            this.textName.Location = new System.Drawing.Point(133, 49);
-            this.textName.Name = "textName";
-            this.textName.Size = new System.Drawing.Size(52, 21);
-            this.textName.TabIndex = 11;
-            this.textName.Text = "Name";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Indigo;
+            this.label7.Location = new System.Drawing.Point(51, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(166, 21);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "Student Informations";
             // 
             // label2
             // 
@@ -251,16 +201,84 @@
             this.label6.TabIndex = 26;
             this.label6.Text = "Name";
             // 
-            // label7
+            // picImage
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Indigo;
-            this.label7.Location = new System.Drawing.Point(51, 18);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(166, 21);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Student Informations";
+            this.picImage.Location = new System.Drawing.Point(258, 20);
+            this.picImage.Name = "picImage";
+            this.picImage.Size = new System.Drawing.Size(119, 105);
+            this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picImage.TabIndex = 21;
+            this.picImage.TabStop = false;
+            // 
+            // textPromotion
+            // 
+            this.textPromotion.AutoSize = true;
+            this.textPromotion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textPromotion.ForeColor = System.Drawing.Color.Indigo;
+            this.textPromotion.Location = new System.Drawing.Point(133, 112);
+            this.textPromotion.Name = "textPromotion";
+            this.textPromotion.Size = new System.Drawing.Size(84, 21);
+            this.textPromotion.TabIndex = 18;
+            this.textPromotion.Text = "Promotion";
+            // 
+            // textSection
+            // 
+            this.textSection.AutoSize = true;
+            this.textSection.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSection.ForeColor = System.Drawing.Color.Indigo;
+            this.textSection.Location = new System.Drawing.Point(133, 133);
+            this.textSection.Name = "textSection";
+            this.textSection.Size = new System.Drawing.Size(61, 21);
+            this.textSection.TabIndex = 8;
+            this.textSection.Text = "Section";
+            // 
+            // textPrename
+            // 
+            this.textPrename.AutoSize = true;
+            this.textPrename.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textPrename.ForeColor = System.Drawing.Color.Indigo;
+            this.textPrename.Location = new System.Drawing.Point(133, 91);
+            this.textPrename.Name = "textPrename";
+            this.textPrename.Size = new System.Drawing.Size(72, 21);
+            this.textPrename.TabIndex = 9;
+            this.textPrename.Text = "Prename";
+            // 
+            // textSecond
+            // 
+            this.textSecond.AutoSize = true;
+            this.textSecond.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSecond.ForeColor = System.Drawing.Color.Indigo;
+            this.textSecond.Location = new System.Drawing.Point(133, 70);
+            this.textSecond.Name = "textSecond";
+            this.textSecond.Size = new System.Drawing.Size(107, 21);
+            this.textSecond.TabIndex = 10;
+            this.textSecond.Text = "Second Name";
+            // 
+            // textName
+            // 
+            this.textName.AutoSize = true;
+            this.textName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textName.ForeColor = System.Drawing.Color.Indigo;
+            this.textName.Location = new System.Drawing.Point(133, 49);
+            this.textName.Name = "textName";
+            this.textName.Size = new System.Drawing.Size(52, 21);
+            this.textName.TabIndex = 11;
+            this.textName.Text = "Name";
+            // 
+            // printDocument
+            // 
+            this.printDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument_PrintPage);
+            // 
+            // printPreviewDialog
+            // 
+            this.printPreviewDialog.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog.Document = this.printDocument;
+            this.printPreviewDialog.Enabled = true;
+            this.printPreviewDialog.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog.Icon")));
+            this.printPreviewDialog.Name = "printPreviewDialog";
+            this.printPreviewDialog.Visible = false;
             // 
             // ShowStudent
             // 
@@ -278,10 +296,10 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
             this.panMain.ResumeLayout(false);
             this.panMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,7 +310,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnExit;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox btnSave;
+        private System.Windows.Forms.PictureBox btnPrint;
         private System.Windows.Forms.Panel panMain;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -306,5 +324,7 @@
         private System.Windows.Forms.Label textSecond;
         private System.Windows.Forms.Label textName;
         private System.Windows.Forms.Label label7;
+        private System.Drawing.Printing.PrintDocument printDocument;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog;
     }
 }

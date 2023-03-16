@@ -14,6 +14,25 @@ namespace StusentCardGenerate
     {
         private readonly StudentCardGenerate.Main _parent;
         public string id, nom, post_nom, prenom, section, promotion;
+        Bitmap toPrint;
+        public void screenShot()
+        {
+            
+            toPrint = new Bitmap(this.Height, this.Width);
+            this.DrawToBitmap(toPrint, new Rectangle(0, 0, this.Width, this.Height));
+        }
+        private void printDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Rectangle rectangle = e.PageBounds;
+            e.Graphics.DrawImage(toPrint, rectangle);
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            screenShot();
+            printPreviewDialog.Show();
+        }
+
         public ShowStudent(StudentCardGenerate.Main parent)
         {
             InitializeComponent();

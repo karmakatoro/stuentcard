@@ -58,6 +58,7 @@ namespace StudentCardGenerate
                 showstudent.promotion = dataGridView.Rows[e.RowIndex].Cells[7].Value.ToString();
                 showstudent.initInfos();
                 showstudent.ShowDialog();
+                
             }
             else if(e.ColumnIndex == 1)
             {
