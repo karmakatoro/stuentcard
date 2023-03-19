@@ -10,14 +10,24 @@ using System.Windows.Forms;
 using System.Drawing.Printing;
 using QRCoder;
 using System.Security.Cryptography;
-
+using System.Runtime.InteropServices;
 namespace StusentCardGenerate
 {
     public partial class ShowStudent : Form
     {
         private readonly StudentCardGenerate.Main _parent;
         public  string id, nom, post_nom, prenom, section, promotion;
-        
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+            (
+                int nLeftRect,
+                int nTopRect,
+                int nRightRect,
+                int nBottomRect,
+                int nWidthEllipse,
+                int nHeightEllipse
+            );
+
 
         private void print(Panel panel)
         {
@@ -50,9 +60,21 @@ namespace StusentCardGenerate
             print(panCard);
         }
 
+        private void panMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panCard_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         public ShowStudent(StudentCardGenerate.Main parent)
         {
             InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+
             _parent = parent;
         }
         public void initInfos()

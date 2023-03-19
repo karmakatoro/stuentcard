@@ -7,17 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace StudentCardGenerate
 {
     public partial class Main : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+            (
+                int nLeftRect,
+                int nTopRect,
+                int nRightRect,
+                int nBottomRect,
+                int nWidthEllipse,
+                int nHeightEllipse
+            );
         AddStudent addstudent;
         EditStudent editstudent;
         StusentCardGenerate.ShowStudent showstudent;
         public Main()
         {
             InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             addstudent = new AddStudent(this);
             editstudent = new EditStudent(this);
             showstudent = new StusentCardGenerate.ShowStudent(this);

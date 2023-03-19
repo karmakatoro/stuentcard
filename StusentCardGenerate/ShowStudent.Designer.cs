@@ -30,7 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowStudent));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnPrint = new System.Windows.Forms.PictureBox();
             this.panMain = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,6 +41,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.picImage = new System.Windows.Forms.PictureBox();
             this.textPromotion = new System.Windows.Forms.Label();
             this.textSection = new System.Windows.Forms.Label();
             this.textPrename = new System.Windows.Forms.Label();
@@ -60,20 +64,16 @@
             this.label9 = new System.Windows.Forms.Label();
             this.picCardImage = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.picImage = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.PictureBox();
-            this.btnPrint = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             this.panMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             this.panCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCardQR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -89,6 +89,28 @@
             this.panel1.Size = new System.Drawing.Size(442, 35);
             this.panel1.TabIndex = 7;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(400, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(921, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(30, 27);
+            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnExit.TabIndex = 6;
+            this.btnExit.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -99,6 +121,18 @@
             this.label1.Size = new System.Drawing.Size(47, 21);
             this.label1.TabIndex = 2;
             this.label1.Text = "Infos";
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.Location = new System.Drawing.Point(365, 5);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(28, 27);
+            this.btnPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnPrint.TabIndex = 16;
+            this.btnPrint.TabStop = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // panMain
             // 
@@ -119,6 +153,7 @@
             this.panMain.Name = "panMain";
             this.panMain.Size = new System.Drawing.Size(413, 165);
             this.panMain.TabIndex = 8;
+            this.panMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panMain_Paint);
             // 
             // label7
             // 
@@ -185,6 +220,15 @@
             this.label6.Size = new System.Drawing.Size(53, 21);
             this.label6.TabIndex = 26;
             this.label6.Text = "Name";
+            // 
+            // picImage
+            // 
+            this.picImage.Location = new System.Drawing.Point(277, 18);
+            this.picImage.Name = "picImage";
+            this.picImage.Size = new System.Drawing.Size(119, 115);
+            this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picImage.TabIndex = 21;
+            this.picImage.TabStop = false;
             // 
             // textPromotion
             // 
@@ -279,6 +323,7 @@
             this.panCard.Name = "panCard";
             this.panCard.Size = new System.Drawing.Size(413, 210);
             this.panCard.TabIndex = 9;
+            this.panCard.Paint += new System.Windows.Forms.PaintEventHandler(this.panCard_Paint);
             // 
             // picCardQR
             // 
@@ -430,49 +475,6 @@
             this.label8.Text = "STUDENT CARD IDENTITY";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // picImage
-            // 
-            this.picImage.Location = new System.Drawing.Point(277, 18);
-            this.picImage.Name = "picImage";
-            this.picImage.Size = new System.Drawing.Size(119, 115);
-            this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picImage.TabIndex = 21;
-            this.picImage.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(400, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(921, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(30, 27);
-            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnExit.TabIndex = 6;
-            this.btnExit.TabStop = false;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
-            this.btnPrint.Location = new System.Drawing.Point(365, 5);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(28, 27);
-            this.btnPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnPrint.TabIndex = 16;
-            this.btnPrint.TabStop = false;
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
-            // 
             // ShowStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -488,17 +490,17 @@
             this.Load += new System.EventHandler(this.ShowStudent_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
             this.panMain.ResumeLayout(false);
             this.panMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
             this.panCard.ResumeLayout(false);
             this.panCard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCardQR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
             this.ResumeLayout(false);
 
         }
