@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
 using QRCoder;
-using System.Security.Cryptography;
 using System.Runtime.InteropServices;
 namespace StusentCardGenerate
 {
@@ -70,6 +63,11 @@ namespace StusentCardGenerate
 
         }
 
+        private void ShowStudent_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _parent.Opacity = 1;
+        }
+
         public ShowStudent(StudentCardGenerate.Main parent)
         {
             InitializeComponent();
@@ -114,13 +112,14 @@ namespace StusentCardGenerate
         }
         private void ShowStudent_Load(object sender, EventArgs e)
         {
+            _parent.Opacity = 0.9;
             StudentCardGenerate.StudentController.getImage(id, picImage, "image");
             StudentCardGenerate.StudentController.getImage(id, picCardImage, "image");
 
             int idHash = id.GetHashCode();
             string studCode = hashString(Convert.ToString(idHash));
             QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
-            var MyData = QG.CreateQrCode(studCode, QRCodeGenerator.ECCLevel.H);
+            var MyData = QG.CreateQrCode("21IGGJ"+id, QRCodeGenerator.ECCLevel.H);
             var code = new QRCoder.QRCode(MyData);
             picCardQR.Image = code.GetGraphic(50);
         }

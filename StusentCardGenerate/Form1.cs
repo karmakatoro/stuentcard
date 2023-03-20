@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
@@ -100,6 +93,13 @@ namespace StudentCardGenerate
         private void Main_Load(object sender, EventArgs e)
         {
             display();
+        }
+
+        private void textSearch_TextChanged(object sender, EventArgs e)
+        {
+            string toSearch = textSearch.Text.Trim();
+            string query = "SELECT id,nom,post_nom,prenom,section,promotion FROM t_student WHERE nom LIKE'%" + toSearch + "%' OR post_nom LIKE'%" + toSearch + "%' OR prenom LIKE'%" + toSearch + "%'";
+            StudentController.displayAndSearch(query, dataGridView);
         }
     }
 }

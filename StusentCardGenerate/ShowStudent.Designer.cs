@@ -485,8 +485,10 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ShowStudent";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ShowStudent";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ShowStudent_FormClosed);
             this.Load += new System.EventHandler(this.ShowStudent_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

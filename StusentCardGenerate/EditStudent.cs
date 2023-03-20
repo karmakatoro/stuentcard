@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Runtime.InteropServices;
@@ -80,12 +74,17 @@ namespace StudentCardGenerate
 
         private void EditStudent_Load(object sender, EventArgs e)
         {
-            
+            _parent.Opacity = 0.9;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void EditStudent_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _parent.Opacity = 1;
         }
 
         private void label7_Click(object sender, EventArgs e)
